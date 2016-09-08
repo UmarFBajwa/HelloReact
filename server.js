@@ -7,9 +7,9 @@ var express = require('express');
 // Create our App
 var app = express();
 
-app.use(express.static)
+app.use(express.static('public'));
 
 // Start the app
 app.listen(3000, function() {
-  console.log('Server is up on port 3000')
+  console.log('Server is up on port 3000');
 });
